@@ -47,6 +47,7 @@ class CometChatConversationListWithMessages extends React.Component {
 	itemClicked = (item, type) => {
 
 		this.contextProviderRef.setTypeAndItem(type, item);
+        this.props.updateParentItemContext(item.guid);
 		this.toggleSideBar()
 	}
 
